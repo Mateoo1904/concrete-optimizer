@@ -411,6 +411,8 @@ def main():
             c4.metric("Coarse Agg", f"{b['coarse_agg'][0]}-{b['coarse_agg'][1]}")
     
     st.subheader("⚙️ Optimization Settings")
+    # Thêm chú thích gợi ý
+    st.info("💡 **Gợi ý cài đặt nhanh:** Chọn 1 loại xi măng, đặt Population size = 50, Generations = 50, giữ nguyên Random seed")
     cement_types = st.multiselect("Select cement types", ["PC40", "PC50"], ["PC40", "PC50"])
     
     c1, c2, c3 = st.columns(3)
